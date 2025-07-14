@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartPlay Zone</title>
+  <link rel="stylesheet" href="task3.css" />
+</head>
+<body>
+  <header>
+    <h1>SmartPlay Zone</h1>
+  </header> 
+
+  <section class="carousel">
+    <h2>Image Carousel</h2>
+    <div class="carousel-container">
+      <img id="carousel-img" src="https://picsum.photos/600/300?random=1" alt="carousel image" />
+      <div class="carousel-buttons">
+        <button onclick="prevImage()">⏮️ Prev</button>
+        <button onclick="nextImage()">⏭️ Next</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz">
+    <h2>Mini Quiz</h2>
+    <div id="quiz-container"></div>
+    <button id="submit">Submit Quiz</button>
+    <p id="result"></p>
+  </section>
+
+  <section class="joke">
+    <h2>Get a Random Joke</h2>
+    <button onclick="fetchJoke()">Get Joke</button>
+    <p id="joke-output"></p>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SmartPlay Zone</p>
+  </footer>
+
+  <script src="task3.js"></script>
+</body>
+</html>
